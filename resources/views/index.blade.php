@@ -22,7 +22,7 @@
     </div>
 </nav>
 <div class="flex flex-col text-gray-900 px-40 mt-9 items-center divide-y-2 space-y-6">
-    <div class="flex-row">
+    <div class="flex flex-col">
         <div class="flex items-center">
             <svg id="flame" class="w-8" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -50,7 +50,7 @@
             </svg>
             <h1 class="text-xl font-semibold">Trending Now</h1>
         </div>
-        <div class="flex space-x-4 pt-2">
+        <div class="flex space-x-4 pt-2 overflow-x-auto scroll-smooth">
             <x-trending-card src="https://www.toramp.com/posters/shows/5599/width360/from.jpg"
                              index="1"></x-trending-card>
             <x-trending-card src="https://www.toramp.com/posters/shows/5437/width360/arcane.jpg"
@@ -67,7 +67,7 @@
                              index="7"></x-trending-card>
         </div>
     </div>
-a
+
     <div class="w-full">
         <h1 class="text-xl font-semibold">Premieres</h1>
         <div class="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 gap-4 mt-6">
