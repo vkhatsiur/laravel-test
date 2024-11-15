@@ -6,7 +6,7 @@
     @vite('resources/css/app.css')
     <title>Document</title>
 </head>
-<body class="text-white">
+<body class="text-white bg-gray-50">
 <nav class="bg-gray-800 pl-16 pr-8 pb-4 pt-4 flex justify-between">
     <div class="flex space-x-4">
         <a href="#" class="bg-gradient-to-r from-pink-500 to-red-500 text-transparent bg-clip-text font-bold text-3xl">TV
@@ -67,174 +67,23 @@
                              index="7"></x-trending-card>
         </div>
     </div>
-
-    <div class="flex-col w-full">
+a
+    <div class="w-full">
         <h1 class="text-xl font-semibold">Premieres</h1>
-        <div class="overflow-x-auto rounded-t-xl">
-            <table class="w-full">
-                <thead class="text-xs text-gray-700 uppercase bg-pink-50">
-                <tr>
-                    <th scope="col" class="px-6 py-3 w-1/12">
-                        Season
-                    </th>
-                    <th scope="col" class="px-6 py-3 w-1/12">
-                        Poster
-                    </th>
-                    <th scope="col" class="px-6 py-3 w-1/3">
-                        Title
-                    </th>
-                    <th scope="col" class="px-6 py-3 w-1/12">
-                        Date
-                    </th>
-                    <th scope="col" class="px-6 py-3 w-1/12">
-                        Channel
-                    </th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="bg-white border-b hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        1
-                    </th>
-                    <td class="px-6 py-4">
-                        <img class="mx-auto rounded-xl"
-                             src="https://www.toramp.com/posters/shows/7144/width82/cross.jpg" alt="From (serial)">
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Cross
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        November 14, 2024
-                        today
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Amazon Prime Video
-                    </td>
-                </tr>
-
-                <tr class="bg-white border-b hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        1
-                    </th>
-                    <td class="px-6 py-4">
-                        <img class="mx-auto rounded-xl"
-                             src="https://www.toramp.com/posters/shows/7144/width82/cross.jpg" alt="From (serial)">
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Cross
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        November 14, 2024
-                        today
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Amazon Prime Video
-                    </td>
-                </tr>
-
-
-                <tr class="bg-white border-b hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        1
-                    </th>
-                    <td class="px-6 py-4">
-                        <img class="mx-auto rounded-xl"
-                             src="https://www.toramp.com/posters/shows/7144/width82/cross.jpg" alt="From (serial)">
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Cross
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        November 14, 2024
-                        today
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Amazon Prime Video
-                    </td>
-                </tr>
-
-                <tr class="bg-white border-b hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        1
-                    </th>
-                    <td class="px-6 py-4">
-                        <img class="mx-auto rounded-xl"
-                             src="https://www.toramp.com/posters/shows/7144/width82/cross.jpg" alt="From (serial)">
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Cross
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        November 14, 2024
-                        today
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Amazon Prime Video
-                    </td>
-                </tr>
-
-                <tr class="bg-white border-b hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        1
-                    </th>
-                    <td class="px-6 py-4">
-                        <img class="mx-auto rounded-xl"
-                             src="https://www.toramp.com/posters/shows/7144/width82/cross.jpg" alt="From (serial)">
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Cross
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        November 14, 2024
-                        today
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Amazon Prime Video
-                    </td>
-                </tr>
-
-                <tr class="bg-white border-b hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        1
-                    </th>
-                    <td class="px-6 py-4">
-                        <img class="mx-auto rounded-xl"
-                             src="https://www.toramp.com/posters/shows/7144/width82/cross.jpg" alt="From (serial)">
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Cross
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        November 14, 2024
-                        today
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Amazon Prime Video
-                    </td>
-                </tr>
-
-                <tr class="bg-white border-b hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        1
-                    </th>
-                    <td class="px-6 py-4">
-                        <img class="mx-auto rounded-xl"
-                             src="https://www.toramp.com/posters/shows/7144/width82/cross.jpg" alt="From (serial)">
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Cross
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        November 14, 2024
-                        today
-                    </td>
-                    <td class="px-6 py-4 text-center">
-                        Amazon Prime Video
-                    </td>
-                </tr>
-
-                </tbody>
-            </table>
+        <div class="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 gap-4 mt-6">
+            <x-premiere_card></x-premiere_card>
+            <x-premiere_card></x-premiere_card>
+            <x-premiere_card></x-premiere_card>
+            <x-premiere_card></x-premiere_card>
+            <x-premiere_card></x-premiere_card>
+            <x-premiere_card></x-premiere_card>
+            <x-premiere_card></x-premiere_card>
+            <x-premiere_card></x-premiere_card>
+            <x-premiere_card></x-premiere_card>
+            <x-premiere_card></x-premiere_card>
+            <x-premiere_card></x-premiere_card>
+            <x-premiere_card></x-premiere_card>
+            <x-premiere_card></x-premiere_card>
         </div>
     </div>
 
