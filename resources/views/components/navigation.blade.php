@@ -8,7 +8,16 @@
     </div>
 
     <div class="flex items-center space-x-4">
-        <a href="/sign-in" class="hover:text-pink-400">Sign in</a>
-        <a href="/sign-up" class="hover:text-pink-400">Sign up</a>
+        @guest
+            <a href="{{ route('create-sign-in') }}" class="hover:text-pink-400">Sign in</a>
+            <a href="{{ route('create-sign-up') }}" class="hover:text-pink-400">Sign up</a>
+        @endguest
+        @auth
+            <div class="w-9 h-9 bg-pink-400 flex items-center justify-center rounded text-2xl font-semibold">
+                {{ Auth::user()->name[0] }}
+            </div>
+
+            <a href="{{ route('sign-out') }}" class="hover:text-pink-400">Sign Out</a>
+        @endauth
     </div>
 </nav>

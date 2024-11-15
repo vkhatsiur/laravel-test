@@ -1,23 +1,21 @@
 <?php
 
+use App\Http\Controllers\SessionController;
+use App\Http\Controllers\SignUpController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/sign-in', function () {
-    return view('auth.sign-in');
+Route::middleware('guest')->group(function () {
+    Route::get('/sign-in', [SessionController::class, 'create'])->name('create-sign-in');
+    Route::post('/sign-in', [SessionController::class, 'store'])->name('store-sign-in');
+
+    Route::get('/sign-up', [SignUpController::class, 'create'])->name('create-sign-up');
+    Route::post('/sign-up', [SignUpController::class, 'store'])->name('store-sign-up');
 });
 
-Route::post('/sign-in', function () {
-    dd(request());
-});
-
-Route::get('/sign-up', function () {
-    return view('auth.sign-up');
-});
-
-Route::post('/sign-up', function () {
-    dd(request());
+Route::middleware('auth')->group(function () {
+    Route::get('/sign-out', [SessionController::class, 'destroy'])->name('sign-out');
 });
