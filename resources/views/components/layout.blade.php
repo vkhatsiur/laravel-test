@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body class="text-gray-900 bg-gray-50">
+    <x-verify-email-notification />
     <x-navigation />
     {{$slot}}
 </body>

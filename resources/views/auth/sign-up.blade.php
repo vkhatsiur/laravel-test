@@ -1,5 +1,6 @@
+@php use App\RouteNames; @endphp
 <x-layout>
-    <x-forms.form class="flex flex-col mt-12 p-8 pt-0" method="POST" action="{{ route('store-sign-up') }}">
+    <x-forms.form class="flex flex-col mt-12 p-8 pt-0" method="POST" action="{{ route(RouteNames::STORE_SIGN_UP) }}">
         <h1 class="font-bold text-center text-4xl mb-8">Sign up on TV Show</h1>
         <x-forms.input label="Name" name="name" />
         <x-forms.input label="Email" name="email" type="email" />
