@@ -50,7 +50,7 @@
             </svg>
             <h1 class="text-xl font-semibold">Trending Now</h1>
         </div>
-        <div class="flex space-x-4 pt-2 overflow-x-auto scroll-smooth">
+        <div class="flex space-x-4 pt-2 overflow-x-auto overflow-y-hidden scroll-smooth">
             <x-trending-card src="https://www.toramp.com/posters/shows/5599/width360/from.jpg"
                              index="1"></x-trending-card>
             <x-trending-card src="https://www.toramp.com/posters/shows/5437/width360/arcane.jpg"
