@@ -19,7 +19,7 @@ Route::middleware('guest')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-    Route::get('/sign-out', [SessionController::class, 'destroy'])->name(RouteNames::SIGN_OUT);
+    Route::delete('/sign-out', [SessionController::class, 'destroy'])->name(RouteNames::SIGN_OUT);
 });
 
 Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {

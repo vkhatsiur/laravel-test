@@ -19,7 +19,14 @@
                 {{ Auth::user()->name[0] }}
             </div>
 
-            <a href="{{ route(RouteNames::SIGN_OUT) }}" class="hover:text-pink-400">Sign Out</a>
+            <a href="{{ route(RouteNames::SIGN_OUT) }}" class="hover:text-pink-400">
+                <form method="POST" action="{{ route(RouteNames::SIGN_OUT) }}">
+                    @csrf
+                    @method('DELETE')
+
+                    <button>Sign Out</button>
+                </form>
+            </a>
         @endauth
     </div>
 </nav>
