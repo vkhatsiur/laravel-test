@@ -2,12 +2,17 @@
 
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\SignUpController;
+use App\Models\TvShow;
 use App\RouteNames;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('index');
+    $tvShows = TvShow::latest()->get();
+    return view('index', [
+        'trendingTvShows' => $tvShows,
+        'premierTvShows' => $tvShows->sortByDesc('vote_average')
+    ]);
 })->name(RouteNames::HOME);
 
 Route::middleware('guest')->group(function () {

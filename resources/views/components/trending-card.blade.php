@@ -1,4 +1,4 @@
-@props(['src', 'index'])
+@props(['tvShow', 'src', 'index'])
 
 <div class="flex flex-none flex-col items-center -space-y-3 group">
     <img class="w-60 rounded-xl group-hover:outline group-hover:outline-pink-400" src="{{$src}}" alt="From (serial)">

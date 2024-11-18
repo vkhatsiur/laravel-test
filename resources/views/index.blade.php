@@ -29,39 +29,19 @@
                 <h1 class="text-xl font-semibold">Trending Now</h1>
             </div>
             <div class="flex space-x-4 pt-2 overflow-x-auto overflow-y-hidden scroll-smooth">
-                <x-trending-card src="https://www.toramp.com/posters/shows/5599/width360/from.jpg"
-                                 index="1"></x-trending-card>
-                <x-trending-card src="https://www.toramp.com/posters/shows/5437/width360/arcane.jpg"
-                                 index="2"></x-trending-card>
-                <x-trending-card src="https://www.toramp.com/posters/shows/3273/width360/911.jpg"
-                                 index="3"></x-trending-card>
-                <x-trending-card src="https://www.toramp.com/posters/shows/2/width360/supernatural.jpg"
-                                 index="4"></x-trending-card>
-                <x-trending-card src="https://www.toramp.com/posters/shows/6189/width360/6189.jpg"
-                                 index="5"></x-trending-card>
-                <x-trending-card src="https://www.toramp.com/posters/shows/6560/width360/6560.jpg"
-                                 index="6"></x-trending-card>
-                <x-trending-card src="https://www.toramp.com/posters/shows/5888/width360/spy_x_family.jpg"
-                                 index="7"></x-trending-card>
+                @for($i = 0; $i < 10; $i++)
+                    <x-trending-card src="{{ $trendingTvShows[$i]->poster_url }}"
+                                     index="{{ $i + 1 }}"></x-trending-card>
+                @endfor
             </div>
         </div>
 
         <div class="w-full">
             <h1 class="text-xl font-semibold">Premieres</h1>
             <div class="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 gap-4 mt-6">
-                <x-premiere_card></x-premiere_card>
-                <x-premiere_card></x-premiere_card>
-                <x-premiere_card></x-premiere_card>
-                <x-premiere_card></x-premiere_card>
-                <x-premiere_card></x-premiere_card>
-                <x-premiere_card></x-premiere_card>
-                <x-premiere_card></x-premiere_card>
-                <x-premiere_card></x-premiere_card>
-                <x-premiere_card></x-premiere_card>
-                <x-premiere_card></x-premiere_card>
-                <x-premiere_card></x-premiere_card>
-                <x-premiere_card></x-premiere_card>
-                <x-premiere_card></x-premiere_card>
+                @foreach($premierTvShows as $tvShow)
+                    <x-premiere_card :$tvShow/>
+                @endforeach
             </div>
         </div>
 
